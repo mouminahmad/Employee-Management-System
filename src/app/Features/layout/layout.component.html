@@ -1,0 +1,72 @@
+<!-- NAVBAR -->
+
+<!-- nav bar -->
+ 
+<nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <a href="#">EMS</a>
+      </div>
+      <div class="navbar-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar-menu" >
+        <li class="navbar-item">
+          <a routerLink="/dashboard" class="navbar-link">Dashboard</a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/employee" routerLinkActive="active" class="navbar-link">Employee</a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/project" routerLinkActive="active" class="navbar-link">Project</a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/projectEmployee" routerLinkActive="active" class="navbar-link">Project Employee</a>
+        </li>
+        <li class="navbar-item">
+            <a routerLink="/" routerLinkActive="active" class="navbar-link">Logout</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+<!-- nav bar -->
+
+
+<!-- Main - Section -->
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+<!-- Main - Section --> 
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About EMS</h3>
+          <p>Employee Management System for streamlined workforce management.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a routerLink="/">Dashboard</a></li>
+            <li><a routerLink="/employee">Employee</a></li>
+            <li><a routerLink="/project">Projects</a></li>
+            <li><a routerLink="/projectEmployee">Project Employee</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info&#64;ems.com</p>
+          <p>Phone: (123) 456-7890</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 EMS. All rights reserved.</p>
+        <p>Developed by MOUMIN AHMAD</p>
+      </div>
+    </div>
+  </footer>
+ <!-- Footer -->

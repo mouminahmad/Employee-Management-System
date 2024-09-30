@@ -1,0 +1,32 @@
+<header class="ems-header">
+  <h1 class="ems-title">Employee Management System</h1>
+</header>
+
+
+<div class="login-container">
+  <div class="login-form">
+    <h2>Login</h2>
+    <form  method="post" >
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" [(ngModel)] = "loginObj.username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" [(ngModel)] = 'loginObj.password' name="password" required>
+      </div>
+      <button type="button" (click)="onLogin()" class="btn-login">Login</button>
+    </form>
+    <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+  </div>
+</div>
+
+ 
+
+<footer class="login-footer">
+  <p class="developer-name">Developed by <span class="highlight">MOUMIN AHMAD</span></p>
+</footer>
+
+
+
+
