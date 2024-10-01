@@ -1,5 +1,9 @@
 <h1 class="text-center mb-4">Employee Management</h1>
 
+@for(item of parentDeptList(); track $index){
+  <h1>{{item.departmentName}}</h1>
+}
+
 <div class="container">
     <button (click)="showForm = !showForm" class="create-new-btn">
         <i class="fa fa-plus-circle" aria-hidden="true"></i> Create New
@@ -41,10 +45,9 @@
         <label for="department" class="form-label">Department</label>
         <select class="form-select" id="department">
           <option selected>Select department</option>
-          <option value="hr">Human Resources</option>
-          <option value="it">Information Technology</option>
-          <option value="finance">Finance</option>
-          <option value="marketing">Marketing</option>
+          <!-- bind data throw Api -->
+          
+                  
         </select>
       </div>
       
